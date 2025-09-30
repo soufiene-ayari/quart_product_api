@@ -1,0 +1,1035 @@
+{
+  "name": "SYSTEMAIR-MASTER",
+  "brand": "systemair",
+  "urls": null,
+  "shops": [
+    {
+      "id": 3,
+      "name": "Systemair SE (115)",
+      "market": "MARKET-115",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 155,
+          "locale": "sv-SE",
+          "name": "Svenska",
+          "algolia.index": "SYS_MARKET-115_sv_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/sv-SE",
+            "api": "https://shop.systemair.com/sv-SE/api",
+            "cart": "https://shop.systemair.com/sv-SE/checkout/cart",
+            "web": "https://shop.systemair.com/sv-SE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Systemair DE (670)",
+      "market": "MARKET-670",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 1,
+          "locale": "de-DE",
+          "name": "Deutsch",
+          "algolia.index": "SYS_MARKET-670_de_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/de-DE",
+            "api": "https://shop.systemair.com/de-DE/api",
+            "cart": "https://shop.systemair.com/de-DE/checkout/cart",
+            "web": "https://shop.systemair.com/de-DE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Systemair US (540)",
+      "market": "MARKET-540",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-US",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-540_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-US",
+            "api": "https://shop.systemair.com/en-US/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-US"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Systemair UK (300)",
+      "market": "MARKET-300",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-GB",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-300_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-GB",
+            "api": "https://shop.systemair.com/en-GB/api",
+            "cart": "https://shop.systemair.com/en-GB/checkout/cart",
+            "web": "https://shop.systemair.com/en-GB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Systemair CA (461)",
+      "market": "MARKET-461",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-CA",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-461_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-CA",
+            "api": "https://shop.systemair.com/en-CA/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-CA"
+          }
+        },
+        {
+          "id": 48,
+          "locale": "fr-CA",
+          "name": "Français",
+          "algolia.index": "SYS_MARKET-461_fr_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/fr-CA",
+            "api": "https://shop.systemair.com/fr-CA/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/fr-CA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Systemair AT (680)",
+      "market": "MARKET-680",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 1,
+          "locale": "de-AT",
+          "name": "Deutsch",
+          "algolia.index": "SYS_MARKET-680_de_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/de-AT",
+            "api": "https://shop.systemair.com/de-AT/api",
+            "cart": "https://shop.systemair.com/de-AT/checkout/cart",
+            "web": "https://shop.systemair.com/de-AT"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Systemair FR (480)",
+      "market": "MARKET-480",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 48,
+          "locale": "fr-FR",
+          "name": "Français",
+          "algolia.index": "SYS_MARKET-480_fr_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/fr-FR",
+            "api": "https://shop.systemair.com/fr-FR/api",
+            "cart": "https://shop.systemair.com/fr-FR/checkout/cart",
+            "web": "https://shop.systemair.com/fr-FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Systemair CH (685)",
+      "market": "MARKET-685",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 73,
+          "locale": "it-CH",
+          "name": "Italiano",
+          "algolia.index": "SYS_MARKET-685_it_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/it-CH",
+            "api": "https://shop.systemair.com/it-CH/api",
+            "cart": "https://shop.systemair.com/it-CH/checkout/cart",
+            "web": "https://shop.systemair.com/it-CH"
+          }
+        },
+        {
+          "id": 48,
+          "locale": "fr-CH",
+          "name": "Français",
+          "algolia.index": "SYS_MARKET-685_fr_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/fr-CH",
+            "api": "https://shop.systemair.com/fr-CH/api",
+            "cart": "https://shop.systemair.com/fr-CH/checkout/cart",
+            "web": "https://shop.systemair.com/fr-CH"
+          }
+        },
+        {
+          "id": 1,
+          "locale": "de-CH",
+          "name": "Deutsch",
+          "algolia.index": "SYS_MARKET-685_de_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/de-CH",
+            "api": "https://shop.systemair.com/de-CH/api",
+            "cart": "https://shop.systemair.com/de-CH/checkout/cart",
+            "web": "https://shop.systemair.com/de-CH"
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Systemair CZ (490)",
+      "market": "MARKET-490",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 29,
+          "locale": "cs-CZ",
+          "name": "čeština",
+          "algolia.index": "SYS_MARKET-490_cs_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/cs-CZ",
+            "api": "https://shop.systemair.com/cs-CZ/api",
+            "cart": "https://shop.systemair.com/cs-CZ/checkout/cart",
+            "web": "https://shop.systemair.com/cs-CZ"
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Systemair NO (450)",
+      "market": "MARKET-450",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 118,
+          "locale": "no-NO",
+          "name": "Norsk",
+          "algolia.index": "SYS_MARKET-450_no_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/no-NO",
+            "api": "https://shop.systemair.com/no-NO/api",
+            "cart": "https://shop.systemair.com/no-NO/checkout/cart",
+            "web": "https://shop.systemair.com/no-NO"
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Systemair FI (440)",
+      "market": "MARKET-440",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 45,
+          "locale": "fi-FI",
+          "name": "Suomi",
+          "algolia.index": "SYS_MARKET-440_fi_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/fi-FI",
+            "api": "https://shop.systemair.com/fi-FI/api",
+            "cart": "https://shop.systemair.com/fi-FI/checkout/cart",
+            "web": "https://shop.systemair.com/fi-FI"
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Systemair NL (695)",
+      "market": "MARKET-695",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 116,
+          "locale": "nl-NL",
+          "name": "Nederlands",
+          "algolia.index": "SYS_MARKET-695_nl_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/nl-NL",
+            "api": "https://shop.systemair.com/nl-NL/api",
+            "cart": "https://shop.systemair.com/nl-NL/checkout/cart",
+            "web": "https://shop.systemair.com/nl-NL"
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Systemair HR (360)",
+      "market": "MARKET-360",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 60,
+          "locale": "hr-HR",
+          "name": "Hrvatski",
+          "algolia.index": "SYS_MARKET-360_hr_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/hr-HR",
+            "api": "https://shop.systemair.com/hr-HR/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/hr-HR"
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Systemair RS (350)",
+      "market": "MARKET-350",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-RS",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-350_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-RS",
+            "api": "https://shop.systemair.com/en-RS/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-RS"
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Systemair IT (325)",
+      "market": "MARKET-325",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 73,
+          "locale": "it-IT",
+          "name": "Italiano",
+          "algolia.index": "SYS_MARKET-325_it_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/it-IT",
+            "api": "https://shop.systemair.com/it-IT/api",
+            "cart": "https://shop.systemair.com/it-IT/checkout/cart",
+            "web": "https://shop.systemair.com/it-IT"
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Systemair MY (330)",
+      "market": "MARKET-330",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-MY",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-330_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-MY",
+            "api": "https://shop.systemair.com/en-MY/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-MY"
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Systemair LT (310)",
+      "market": "MARKET-310",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 98,
+          "locale": "lt-LT",
+          "name": "Lietuvių",
+          "algolia.index": "SYS_MARKET-310_lt_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/lt-LT",
+            "api": "https://shop.systemair.com/lt-LT/api",
+            "cart": "https://shop.systemair.com/lt-LT/checkout/cart",
+            "web": "https://shop.systemair.com/lt-LT"
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Systemair ZA (290)",
+      "market": "MARKET-290",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-ZA",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-290_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-ZA",
+            "api": "https://shop.systemair.com/en-ZA/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-ZA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Systemair PE (285)",
+      "market": "MARKET-285",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 40,
+          "locale": "es-PE",
+          "name": "Español",
+          "algolia.index": "SYS_MARKET-285_es_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/es-PE",
+            "api": "https://shop.systemair.com/es-PE/api",
+            "cart": "https://shop.systemair.com/es-PE/checkout/cart",
+            "web": "https://shop.systemair.com/es-PE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Systemair MA (960)",
+      "market": "MARKET-960",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 48,
+          "locale": "fr-MA",
+          "name": "Français",
+          "algolia.index": "SYS_MARKET-960_fr_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/fr-MA",
+            "api": "https://shop.systemair.com/fr-MA/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/fr-MA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Systemair MX (535)",
+      "market": "MARKET-535",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 40,
+          "locale": "es-MX",
+          "name": "Español",
+          "algolia.index": "SYS_MARKET-535_es_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/es-MX",
+            "api": "https://shop.systemair.com/es-MX/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/es-MX"
+          }
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Systemair IE (655)",
+      "market": "MARKET-655",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-IE",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-655_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-IE",
+            "api": "https://shop.systemair.com/en-IE/api",
+            "cart": "https://shop.systemair.com/en-IE/checkout/cart",
+            "web": "https://shop.systemair.com/en-IE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Systemair SG (660)",
+      "market": "MARKET-660",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-SG",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-660_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-SG",
+            "api": "https://shop.systemair.com/en-SG/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-SG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Systemair HK (665)",
+      "market": "MARKET-665",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-HK",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-665_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-HK",
+            "api": "https://shop.systemair.com/en-HK/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-HK"
+          }
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Systemair DK (770)",
+      "market": "MARKET-770",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 33,
+          "locale": "da-DK",
+          "name": "Dansk",
+          "algolia.index": "SYS_MARKET-770_da_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/da-DK",
+            "api": "https://shop.systemair.com/da-DK/api",
+            "cart": "https://shop.systemair.com/da-DK/checkout/cart",
+            "web": "https://shop.systemair.com/da-DK"
+          }
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Systemair HU (790)",
+      "market": "MARKET-790",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 62,
+          "locale": "hu-HU",
+          "name": "Magyar",
+          "algolia.index": "SYS_MARKET-790_hu_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/hu-HU",
+            "api": "https://shop.systemair.com/hu-HU/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/hu-HU"
+          }
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Systemair RO (795)",
+      "market": "MARKET-795",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 135,
+          "locale": "ro-RO",
+          "name": "Română",
+          "algolia.index": "SYS_MARKET-795_ro_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/ro-RO",
+            "api": "https://shop.systemair.com/ro-RO/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/ro-RO"
+          }
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Systemair IN (240)",
+      "market": "MARKET-240",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-IN",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-240_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-IN",
+            "api": "https://shop.systemair.com/en-IN/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-IN"
+          }
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Systemair TR (760)",
+      "market": "MARKET-760",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 166,
+          "locale": "tr-TR",
+          "name": "Türkçe",
+          "algolia.index": "SYS_MARKET-760_tr_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/tr-TR",
+            "api": "https://shop.systemair.com/tr-TR/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/tr-TR"
+          }
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Systemair LV (740)",
+      "market": "MARKET-740",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 100,
+          "locale": "lv-LV",
+          "name": "Latviešu",
+          "algolia.index": "SYS_MARKET-740_lv_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/lv-LV",
+            "api": "https://shop.systemair.com/lv-LV/api",
+            "cart": "https://shop.systemair.com/lv-LV/checkout/cart",
+            "web": "https://shop.systemair.com/lv-LV"
+          }
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Systemair EE (730)",
+      "market": "MARKET-730",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 41,
+          "locale": "et-EE",
+          "name": "Eesti",
+          "algolia.index": "SYS_MARKET-730_et_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/et-EE",
+            "api": "https://shop.systemair.com/et-EE/api",
+            "cart": "https://shop.systemair.com/et-EE/checkout/cart",
+            "web": "https://shop.systemair.com/et-EE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Systemair BE (700)",
+      "market": "MARKET-700",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 116,
+          "locale": "nl-BE",
+          "name": "Nederlands",
+          "algolia.index": "SYS_MARKET-700_nl_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/nl-BE",
+            "api": "https://shop.systemair.com/nl-BE/api",
+            "cart": "https://shop.systemair.com/nl-BE/checkout/cart",
+            "web": "https://shop.systemair.com/nl-BE"
+          }
+        },
+        {
+          "id": 48,
+          "locale": "fr-BE",
+          "name": "Français",
+          "algolia.index": "SYS_MARKET-700_fr_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/fr-BE",
+            "api": "https://shop.systemair.com/fr-BE/api",
+            "cart": "https://shop.systemair.com/fr-BE/checkout/cart",
+            "web": "https://shop.systemair.com/fr-BE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Systemair AE (250)",
+      "market": "MARKET-250",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-AE",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-250_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-AE",
+            "api": "https://shop.systemair.com/en-AE/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-AE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Systemair BG (625)",
+      "market": "MARKET-625",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 16,
+          "locale": "bg-BG",
+          "name": "български",
+          "algolia.index": "SYS_MARKET-625_bg_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/bg-BG",
+            "api": "https://shop.systemair.com/bg-BG/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/bg-BG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Systemair SI (610)",
+      "market": "MARKET-610",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 146,
+          "locale": "sl-SI",
+          "name": "Slovenščina",
+          "algolia.index": "SYS_MARKET-610_sl_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/sl-SI",
+            "api": "https://shop.systemair.com/sl-SI/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/sl-SI"
+          }
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Systemair PT (635)",
+      "market": "MARKET-635",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 131,
+          "locale": "pt-PT",
+          "name": "Português",
+          "algolia.index": "SYS_MARKET-635_pt_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/pt-PT",
+            "api": "https://shop.systemair.com/pt-PT/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/pt-PT"
+          }
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Systemair ES (645)",
+      "market": "MARKET-645",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 40,
+          "locale": "es-ES",
+          "name": "Español",
+          "algolia.index": "SYS_MARKET-645_es_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/es-ES",
+            "api": "https://shop.systemair.com/es-ES/api",
+            "cart": "https://shop.systemair.com/es-ES/checkout/cart",
+            "web": "https://shop.systemair.com/es-ES"
+          }
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Systemair SK (500)",
+      "market": "MARKET-500",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 145,
+          "locale": "sk-SK",
+          "name": "Slovenčina",
+          "algolia.index": "SYS_MARKET-500_sk_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/sk-SK",
+            "api": "https://shop.systemair.com/sk-SK/api",
+            "cart": "https://shop.systemair.com/sk-SK/checkout/cart",
+            "web": "https://shop.systemair.com/sk-SK"
+          }
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Systemair PL (470)",
+      "market": "MARKET-470",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 129,
+          "locale": "pl-PL",
+          "name": "Polski",
+          "algolia.index": "SYS_MARKET-470_pl_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/pl-PL",
+            "api": "https://shop.systemair.com/pl-PL/api",
+            "cart": "https://shop.systemair.com/pl-PL/checkout/cart",
+            "web": "https://shop.systemair.com/pl-PL"
+          }
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Systemair GR (260)",
+      "market": "MARKET-260",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 37,
+          "locale": "el-GR",
+          "name": "Ελληνικά",
+          "algolia.index": "SYS_MARKET-260_el_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/el-GR",
+            "api": "https://shop.systemair.com/el-GR/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/el-GR"
+          }
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Systemair Global (005)",
+      "market": "MARKET-005",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-005_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en",
+            "api": "https://shop.systemair.com/en/api",
+            "cart": "https://shop.systemair.com/en/checkout/cart",
+            "web": "https://shop.systemair.com/en"
+          }
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Systemair UA (930)",
+      "market": "MARKET-930",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 172,
+          "locale": "uk-UA",
+          "name": "українська",
+          "algolia.index": "SYS_MARKET-930_uk_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/uk-UA",
+            "api": "https://shop.systemair.com/uk-UA/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/uk-UA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Systemair BY (746)",
+      "market": "MARKET-746",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 136,
+          "locale": "ru-BY",
+          "name": "русский",
+          "algolia.index": "SYS_MARKET-746_ru_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/ru-BY",
+            "api": "https://shop.systemair.com/ru-BY/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/ru-BY"
+          }
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Systemair QA (950)",
+      "market": "MARKET-950",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-QA",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-950_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-QA",
+            "api": "https://shop.systemair.com/en-QA/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-QA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Systemair AZ (935)",
+      "market": "MARKET-935",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 13,
+          "locale": "az-AZ",
+          "name": "Azərbaycan",
+          "algolia.index": "SYS_MARKET-935_az_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/az-AZ",
+            "api": "https://shop.systemair.com/az-AZ/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/az-AZ"
+          }
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Systemair EA (965)",
+      "market": "MARKET-965",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-KE",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-965_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-KE",
+            "api": "https://shop.systemair.com/en-KE/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/en-KE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Systemair KZ (905)",
+      "market": "MARKET-905",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 136,
+          "locale": "ru-KZ",
+          "name": "русский",
+          "algolia.index": "SYS_MARKET-905_ru_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/ru-KZ",
+            "api": "https://shop.systemair.com/ru-KZ/api",
+            "cart": null,
+            "web": "https://shop.systemair.com/ru-KZ"
+          }
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Systemair GE (925)",
+      "market": "MARKET-925",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 77,
+          "locale": "ka-GE",
+          "name": "ქართული",
+          "algolia.index": "SYS_MARKET-925_ka_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/ka-GE",
+            "api": "https://shop.systemair.com/ka-GE/api",
+            "cart": "https://shop.systemair.com/ka-GE/checkout/cart",
+            "web": "https://shop.systemair.com/ka-GE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Systemair SA (955)",
+      "market": "MARKET-955",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-SA",
+          "name": "English",
+          "algolia.index": "SYS_MARKET-955_en_NG",
+          "urls": {
+            "rest": "https://shop.systemair.com/rest/en-SA",
+            "api": "https://shop.systemair.com/en-SA/api",
+            "cart": "https://shop.systemair.com/en-SA/checkout/cart",
+            "web": "https://shop.systemair.com/en-SA"
+          }
+        }
+      ]
+    }
+  ]
+}

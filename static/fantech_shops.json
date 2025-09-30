@@ -1,0 +1,59 @@
+{
+  "name": "FANTECH-MASTER",
+  "brand": "fantech",
+  "urls": null,
+  "shops": [
+    {
+      "id": 66,
+      "name": "Fantech Canada (460)",
+      "market": "MARKET-460",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-CA",
+          "name": "English",
+          "algolia.index": "FAN_MARKET-460_en_NG",
+          "urls": {
+            "rest": "https://shopng.fantech.net/rest/en-CA",
+            "api": "https://shopng.fantech.net/en-CA/api",
+            "cart": "https://shopng.fantech.net/en-CA/checkout/cart",
+            "web": "https://shopng.fantech.net/en-CA"
+          }
+        },
+        {
+          "id": 48,
+          "locale": "fr-CA",
+          "name": "Français",
+          "algolia.index": "FAN_MARKET-460_fr_NG",
+          "urls": {
+            "rest": "https://shopng.fantech.net/rest/fr-CA",
+            "api": "https://shopng.fantech.net/fr-CA/api",
+            "cart": "https://shopng.fantech.net/fr-CA/checkout/cart",
+            "web": "https://shopng.fantech.net/fr-CA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Fantech US (541)",
+      "market": "MARKET-541",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-US",
+          "name": "English",
+          "algolia.index": "FAN_MARKET-541_en_NG",
+          "urls": {
+            "rest": "https://shopng.fantech.net/rest/en-US",
+            "api": "https://shopng.fantech.net/en-US/api",
+            "cart": "https://shopng.fantech.net/en-US/checkout/cart",
+            "web": "https://shopng.fantech.net/en-US"
+          }
+        }
+      ]
+    }
+  ]
+}

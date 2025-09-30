@@ -1,0 +1,319 @@
+{
+  "name": "FRICO-MASTER",
+  "brand": "frico",
+  "urls": null,
+  "shops": [
+    {
+      "id": 53,
+      "name": "Frico Global (040)",
+      "market": "MARKET-040",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en",
+          "name": "English",
+          "algolia.index": "FRI_MARKET-040_en_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/en",
+            "api": "https://shopng.frico.net/en/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/en"
+          }
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Frico Sweden (041)",
+      "market": "MARKET-041",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 155,
+          "locale": "sv-SE",
+          "name": "Svenska",
+          "algolia.index": "FRI_MARKET-041_sv_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/sv-SE",
+            "api": "https://shopng.frico.net/sv-SE/api",
+            "cart": "https://shopng.frico.net/sv-SE/checkout/cart",
+            "web": "https://shopng.frico.net/sv-SE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Frico Italy (326)",
+      "market": "MARKET-326",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 73,
+          "locale": "it-IT",
+          "name": "Italiano",
+          "algolia.index": "FRI_MARKET-326_it_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/it-IT",
+            "api": "https://shopng.frico.net/it-IT/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/it-IT"
+          }
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Frico Netherland (280)",
+      "market": "MARKET-280",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 116,
+          "locale": "nl-NL",
+          "name": "Nederlands",
+          "algolia.index": "FRI_MARKET-280_nl_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/nl-NL",
+            "api": "https://shopng.frico.net/nl-NL/api",
+            "cart": "https://shopng.frico.net/nl-NL/checkout/cart",
+            "web": "https://shopng.frico.net/nl-NL"
+          }
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Frico France (410)",
+      "market": "MARKET-410",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 48,
+          "locale": "fr-FR",
+          "name": "Français",
+          "algolia.index": "FRI_MARKET-410_fr_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/fr-FR",
+            "api": "https://shopng.frico.net/fr-FR/api",
+            "cart": "https://shopng.frico.net/fr-FR/checkout/cart",
+            "web": "https://shopng.frico.net/fr-FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Frico Norway (420)",
+      "market": "MARKET-420",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 118,
+          "locale": "no-NO",
+          "name": "Norsk",
+          "algolia.index": "FRI_MARKET-420_no_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/no-NO",
+            "api": "https://shopng.frico.net/no-NO/api",
+            "cart": "https://shopng.frico.net/no-NO/checkout/cart",
+            "web": "https://shopng.frico.net/no-NO"
+          }
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Frico Germany (435)",
+      "market": "MARKET-435",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 1,
+          "locale": "de-DE",
+          "name": "Deutsch",
+          "algolia.index": "FRI_MARKET-435_de_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/de-DE",
+            "api": "https://shopng.frico.net/de-DE/api",
+            "cart": "https://shopng.frico.net/de-DE/checkout/cart",
+            "web": "https://shopng.frico.net/de-DE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Frico Poland (471)",
+      "market": "MARKET-471",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 129,
+          "locale": "pl-PL",
+          "name": "Polski",
+          "algolia.index": "FRI_MARKET-471_pl_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/pl-PL",
+            "api": "https://shopng.frico.net/pl-PL/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/pl-PL"
+          }
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Frico Czech Republic (491)",
+      "market": "MARKET-491",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 29,
+          "locale": "cs-CZ",
+          "name": "čeština",
+          "algolia.index": "FRI_MARKET-491_cs_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/cs-CZ",
+            "api": "https://shopng.frico.net/cs-CZ/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/cs-CZ"
+          }
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Frico Slovakia (501)",
+      "market": "MARKET-501",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 145,
+          "locale": "sk-SK",
+          "name": "Slovenčina",
+          "algolia.index": "FRI_MARKET-501_sk_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/sk-SK",
+            "api": "https://shopng.frico.net/sk-SK/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/sk-SK"
+          }
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Frico Spain (646)",
+      "market": "MARKET-646",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 40,
+          "locale": "es-ES",
+          "name": "Español",
+          "algolia.index": "FRI_MARKET-646_es_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/es-ES",
+            "api": "https://shopng.frico.net/es-ES/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/es-ES"
+          }
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Frico Russia (921)",
+      "market": "MARKET-921",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 136,
+          "locale": "ru-RU",
+          "name": "русский",
+          "algolia.index": "FRI_MARKET-921_ru_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/ru-RU",
+            "api": "https://shopng.frico.net/ru-RU/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/ru-RU"
+          }
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Frico Canada (462)",
+      "market": "MARKET-462",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 48,
+          "locale": "fr-CA",
+          "name": "Français",
+          "algolia.index": "FRI_MARKET-462_fr_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/fr-CA",
+            "api": "https://shopng.frico.net/fr-CA/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/fr-CA"
+          }
+        },
+        {
+          "id": 38,
+          "locale": "en-CA",
+          "name": "English",
+          "algolia.index": "FRI_MARKET-462_en_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/en-CA",
+            "api": "https://shopng.frico.net/en-CA/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/en-CA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Frico USA (542)",
+      "market": "MARKET-542",
+      "checkout": false,
+      "languages": [
+        {
+          "id": 38,
+          "locale": "en-US",
+          "name": "English",
+          "algolia.index": "FRI_MARKET-542_en_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/en-US",
+            "api": "https://shopng.frico.net/en-US/api",
+            "cart": null,
+            "web": "https://shopng.frico.net/en-US"
+          }
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Frico DK (445)",
+      "market": "MARKET-445",
+      "checkout": true,
+      "languages": [
+        {
+          "id": 33,
+          "locale": "da-DK",
+          "name": "Dansk",
+          "algolia.index": "FRI_MARKET-445_da_NG",
+          "urls": {
+            "rest": "https://shopng.frico.net/rest/da-DK",
+            "api": "https://shopng.frico.net/da-DK/api",
+            "cart": "https://shopng.frico.net/da-DK/checkout/cart",
+            "web": "https://shopng.frico.net/da-DK"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+    "version": "2025.07.18.0",
+    "published": 1752817293,
+    "markets": ["MARKET-540", "MARKET-300", "MARKET-461", "MARKET-345", "MARKET-310", "MARKET-290", "MARKET-285", "MARKET-535", "MARKET-655", "MARKET-660", "MARKET-665", "MARKET-770", "MARKET-740", "MARKET-730", "MARKET-250", "MARKET-610", "MARKET-225", "MARKET-645", "MARKET-500", "MARKET-955"],
+    "locales": ["en-US", "en-GB", "en-CA", "fr-CA", "lt-LT", "en-ZA", "es-PE", "es-MX", "en-IE", "en-SG", "en-HK", "da-DK", "lv-LV", "et-EE", "en-AE", "sl-SI", "es-ES", "sk-SK", "en-SA"]
+}
