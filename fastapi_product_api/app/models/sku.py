@@ -1,6 +1,8 @@
 from __future__ import annotations
 
-from typing import Any
+
+from typing import Any, Optional
+
 
 from pydantic import BaseModel, Field
 
@@ -9,29 +11,36 @@ class Certification(BaseModel):
     id: str
     name: str
     label: str
-    image: str | None = None
-    text: str | None = None
+
+    image: Optional[str] = None
+    text: Optional[str] = None
+
 
 
 class Attribute(BaseModel):
     name: str
     attribute: str
     value: Any
-    unit: str | None = None
+
+    unit: Optional[str] = None
+
 
 
 class Buttons(BaseModel):
     name: str
     type: str
-    icon: str | None = None
-    url: str | None = None
+
+    icon: Optional[str] = None
+    url: Optional[str] = None
 
 
 class Price(BaseModel):
     ondemand: bool
     string: str
-    float: float | None = None
-    currency: str | None = None
+
+    float: Optional[float] = None
+    currency: Optional[str] = None
+
 
 
 class SectionContent(BaseModel):
@@ -55,35 +64,44 @@ class Document(BaseModel):
 class Relation(BaseModel):
     id: str
     vendorId: str
-    operatingMode: str | None = None
-    parentId: str | None = None
+
+    operatingMode: Optional[str] = None
+    parentId: Optional[str] = None
     type: str
-    group: str | None = None
+    group: Optional[str] = None
     name: str
     image: list[str] = Field(default_factory=list)
-    priority: str | None = None
+    priority: Optional[str] = None
+
 
 
 class RelationShop(BaseModel):
     id: str
     vendorId: str
     type: str
-    group: str | None = None
-    name: str
+
+    group: Optional[str] = None
+
 
 
 class RelationListResponse(BaseModel):
-    meta: dict[str, int | str]
+
+    meta: dict[str, Any]
+
     items: list[Relation]
 
 
 class DocumentListResponse(BaseModel):
-    meta: dict[str, int | str]
+
+    meta: dict[str, Any]
+
     items: list[Document]
 
 
 class CertificationListResponse(BaseModel):
-    meta: dict[str, int | str]
+
+    meta: dict[str, Any]
+
     items: list[Certification]
 
 
@@ -92,14 +110,16 @@ class ShopSku(BaseModel):
     parentId: str
     vendorId: str
     name: str
-    tagline: str | None = None
+
+    tagline: Optional[str] = None
     active: bool
     expired: bool
     approved: bool
-    releaseDate: str | None = None
-    description: str | None = None
-    specificationText: str | None = None
-    price: Price | None = None
+    releaseDate: Optional[str] = None
+    description: Optional[str] = None
+    specificationText: Optional[str] = None
+    price: Optional[Price] = None
+
     images: list[str] = Field(default_factory=list)
     attributes: dict[str, Any] = Field(default_factory=dict)
     deleted: bool = False
@@ -112,24 +132,28 @@ class Sku(BaseModel):
     parentId: str
     vendorId: str
     maintenanceId: str
-    defaultOperatingModeId: str | None = None
+
+    defaultOperatingModeId: Optional[str] = None
     successorsIds: list[str] = Field(default_factory=list)
     name: str
-    shortName: str | None = None
-    description: str | None = None
-    specificationText: str | None = None
-    tagline: str | None = None
+    shortName: Optional[str] = None
+    description: Optional[str] = None
+    specificationText: Optional[str] = None
+    tagline: Optional[str] = None
+
     active: bool
     expired: bool
     approved: bool
     deleted: bool = False
-    releaseDate: str | None = None
-    selectionTool: bool | None = False
-    designTool: bool | None = False
-    magicadBim: bool | None = False
-    sort: int | None = 0
-    price: Price | None = None
-    default: bool | None = False
+
+    releaseDate: Optional[str] = None
+    selectionTool: Optional[bool] = False
+    designTool: Optional[bool] = False
+    magicadBim: Optional[bool] = False
+    sort: Optional[int] = 0
+    price: Optional[Price] = None
+    default: Optional[bool] = False
+
     certifications: list[Certification] = Field(default_factory=list)
     images: list[str] = Field(default_factory=list)
     attributes: dict[str, Any] = Field(default_factory=dict)
@@ -138,7 +162,9 @@ class Sku(BaseModel):
 
 
 class SkuListResponse(BaseModel):
-    meta: dict[str, int | str]
+
+    meta: dict[str, Any]
+
     items: list[Sku]
 
 

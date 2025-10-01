@@ -1,22 +1,25 @@
 from __future__ import annotations
 
-from typing import Optional
+
+from typing import Optional, Union
+
 
 from pydantic import BaseModel, Field
 
 
 class SkuValue(BaseModel):
     label: str
-    value: str | int
-    id: int | None = None
+    value: Union[str, int]
+    id: Optional[int] = None
     skus: list[str] = Field(default_factory=list)
 
 
 class SkuOption(BaseModel):
     name: str
-    unit: str | None = None
+
+    unit: Optional[str] = None
     attribute: str
-    type: str | None = None
+    type: Optional[str] = None
     values: list[SkuValue] = Field(default_factory=list)
 
 
@@ -27,14 +30,18 @@ class Product(BaseModel):
     secondaryParents: list[str] = Field(default_factory=list)
     name: str
     shortName: str
-    description: str | None = None
-    tagline: str | None = None
+
+    description: Optional[str] = None
+    tagline: Optional[str] = None
+
     sort: int
     active: bool
     hidden: bool
     approved: bool
-    releaseDate: str | None = None
-    importance: str | None = None
+
+    releaseDate: Optional[str] = None
+    importance: Optional[str] = None
+
     deleted: bool = False
     images: list[str] = Field(default_factory=list)
     skuOptions: list[SkuOption] = Field(default_factory=list)

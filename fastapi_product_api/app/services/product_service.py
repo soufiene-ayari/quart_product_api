@@ -1,22 +1,26 @@
 from __future__ import annotations
 
 import asyncio
-from typing import Optional
+
 
 from services.product_builder import ProductBuilder
+from services.sku_builder import SkuBuilder
 
+from ..integrations.database import Database
 from ..integrations.elasticsearch import ElasticsearchGateway
-from ..models import Product, ProductDocument, ProductDocumentsResponse, ProductListResponse
+from ..models import (
+    Product,
+    ProductDocument,
+    ProductDocumentsResponse,
+    ProductListResponse,
+    Sku,
+    SkuListResponse,
+)
 from ..models.responses import Meta
-from ..utils.mapping import map_locale
+from ..queries.product_queries import query_child_objects
+from ..services.builder_runner import run_builder
+from ..utils.mapping import map_locale, map_market
 
-
-async def _run_builder(builder: ProductBuilder, method: str, *args, **kwargs):
-    async def _invoke() -> Product | None:
-        func = getattr(builder, method)
-        return await func(*args, **kwargs)
-
-    return await asyncio.to_thread(asyncio.run, _invoke())
 
 
 async def get_product_by_id(
@@ -24,7 +28,9 @@ async def get_product_by_id(
 ) -> Product | None:
     builder = ProductBuilder(es.legacy)
     lang = map_locale(locale)
-    return await _run_builder(builder, "build_product", identifier, lang, brand)
+
+    return await run_builder(builder, "build_product", identifier, lang, brand)
+
 
 
 async def list_products(
@@ -74,7 +80,9 @@ async def list_products(
     for hit in hits:
         product_id = hit.get("_source", {}).get("epimId")
         if product_id:
-            product = await _run_builder(builder, "build_product", product_id, lang, brand)
+
+            product = await run_builder(builder, "build_product", product_id, lang, brand)
+
             if product:
                 items.append(product)
 
@@ -95,4 +103,47 @@ async def get_product_documents(identifier: str, locale: str, brand: str) -> Pro
     return ProductDocumentsResponse(meta={"items": len(documents)}, items=documents)
 
 
-__all__ = ["get_product_by_id", "list_products", "get_product_documents"]
+
+async def get_product_skus(
+    es: ElasticsearchGateway,
+    db: Database,
+    identifier: str,
+    locale: str,
+    brand: str,
+    market: str | None,
+) -> SkuListResponse:
+    builder = SkuBuilder(es.legacy, db.legacy)
+    lang = map_locale(locale)
+    market_code = market or map_market(brand, lang)
+
+    index = f"systemair_ds_products_{lang}"
+    raw_hits = await es.get_scroll(index, query_child_objects(identifier), 10000, "1m")
+    sku_ids = [hit.get("_source", {}).get("epimId") for hit in raw_hits if hit.get("_source")]
+
+    if not sku_ids:
+        return SkuListResponse(meta={"total": 0}, items=[])
+
+    semaphore = asyncio.Semaphore(64)
+
+    async def build_one(sku_id: str) -> Sku | None:
+        async with semaphore:
+            return await run_builder(builder, "build_sku", sku_id, lang, brand, market_code)
+
+    tasks = [asyncio.create_task(build_one(sku_id)) for sku_id in sku_ids]
+
+    items: list[Sku] = []
+    for task in asyncio.as_completed(tasks):
+        sku = await task
+        if sku:
+            items.append(sku)
+
+    return SkuListResponse(meta={"total": len(items)}, items=items)
+
+
+__all__ = [
+    "get_product_by_id",
+    "get_product_skus",
+    "list_products",
+    "get_product_documents",
+]
+

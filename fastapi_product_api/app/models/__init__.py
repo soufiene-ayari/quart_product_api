@@ -1,3 +1,16 @@
+
+from .category import Category, CategoryListMeta, CategoryListResponse
+from .operating_mode import (
+    OperatingMode,
+    OperatingModeListMeta,
+    OperatingModeListResponse,
+    Buttons as OperatingModeButtons,
+    Certification as OperatingModeCertification,
+    Price as OperatingModePrice,
+    Section as OperatingModeSection,
+    SectionContent as OperatingModeSectionContent,
+)
+
 from .product import (
     Product,
     ProductDocument,
@@ -27,6 +40,11 @@ from .sku import (
 
 __all__ = [
     "Attribute",
+
+    "Category",
+    "CategoryListMeta",
+    "CategoryListResponse",
+
     "Buttons",
     "Certification",
     "CertificationListResponse",
@@ -49,4 +67,14 @@ __all__ = [
     "SkuListResponse",
     "SkuOption",
     "SkuValue",
+
+    "OperatingMode",
+    "OperatingModeListMeta",
+    "OperatingModeListResponse",
+    "OperatingModeButtons",
+    "OperatingModeCertification",
+    "OperatingModePrice",
+    "OperatingModeSection",
+    "OperatingModeSectionContent",
+
 ]
