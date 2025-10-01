@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 
+
 from services.product_builder import ProductBuilder
 from services.sku_builder import SkuBuilder
 
@@ -21,12 +22,15 @@ from ..services.builder_runner import run_builder
 from ..utils.mapping import map_locale, map_market
 
 
+
 async def get_product_by_id(
     es: ElasticsearchGateway, identifier: str, locale: str, brand: str
 ) -> Product | None:
     builder = ProductBuilder(es.legacy)
     lang = map_locale(locale)
+
     return await run_builder(builder, "build_product", identifier, lang, brand)
+
 
 
 async def list_products(
@@ -76,7 +80,9 @@ async def list_products(
     for hit in hits:
         product_id = hit.get("_source", {}).get("epimId")
         if product_id:
+
             product = await run_builder(builder, "build_product", product_id, lang, brand)
+
             if product:
                 items.append(product)
 
@@ -95,6 +101,7 @@ async def get_product_documents(identifier: str, locale: str, brand: str) -> Pro
         )
     ]
     return ProductDocumentsResponse(meta={"items": len(documents)}, items=documents)
+
 
 
 async def get_product_skus(
@@ -139,3 +146,4 @@ __all__ = [
     "list_products",
     "get_product_documents",
 ]
+

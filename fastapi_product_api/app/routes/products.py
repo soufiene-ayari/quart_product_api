@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+
 from fastapi import APIRouter, HTTPException, Path, Query, Request
 
 from ..integrations.database import Database
@@ -11,6 +12,7 @@ from ..services.product_service import (
     get_product_skus,
     list_products,
 )
+
 
 router = APIRouter(prefix="/rest", tags=["products"])
 
@@ -52,6 +54,7 @@ async def fetch_product_documents(
     locale: str,
 ):
     return await get_product_documents(product_id, locale, brand)
+
 
 
 @router.get("/{brand}/{locale}/product/{product_id}/skus", response_model=SkuListResponse)

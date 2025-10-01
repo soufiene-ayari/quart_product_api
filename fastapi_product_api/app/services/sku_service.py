@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+
 from __future__ import annotations
+
 
 import asyncio
 from typing import Optional
@@ -11,8 +13,10 @@ from ..integrations.database import Database
 from ..integrations.elasticsearch import ElasticsearchGateway
 from ..models import Sku, SkuListResponse
 from ..models.responses import Meta
+
 from ..services.builder_runner import run_builder
 from ..utils.mapping import map_locale, map_market
+
 
 
 async def get_sku(
@@ -25,7 +29,9 @@ async def get_sku(
 ) -> Optional[Sku]:
     builder = SkuBuilder(es.legacy, db.legacy)
     lang = map_locale(locale)
+
     return await run_builder(builder, "build_sku", identifier, lang, brand, market)
+
 
 
 async def list_skus(
@@ -76,7 +82,9 @@ async def list_skus(
     for hit in hits:
         sku_id = hit.get("_source", {}).get("epimId")
         if sku_id:
+
             sku = await run_builder(builder, "build_sku", sku_id, lang, brand, market)
+
             if sku:
                 items.append(sku)
 

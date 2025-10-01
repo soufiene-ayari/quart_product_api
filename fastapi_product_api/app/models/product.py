@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+
 from typing import Optional, Union
+
 
 from pydantic import BaseModel, Field
 
@@ -14,6 +16,7 @@ class SkuValue(BaseModel):
 
 class SkuOption(BaseModel):
     name: str
+
     unit: Optional[str] = None
     attribute: str
     type: Optional[str] = None
@@ -27,14 +30,18 @@ class Product(BaseModel):
     secondaryParents: list[str] = Field(default_factory=list)
     name: str
     shortName: str
+
     description: Optional[str] = None
     tagline: Optional[str] = None
+
     sort: int
     active: bool
     hidden: bool
     approved: bool
+
     releaseDate: Optional[str] = None
     importance: Optional[str] = None
+
     deleted: bool = False
     images: list[str] = Field(default_factory=list)
     skuOptions: list[SkuOption] = Field(default_factory=list)
